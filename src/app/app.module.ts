@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {MatButtonModule, MatSelectModule,MatAutocompleteModule, MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatFormFieldModule } from '@angular/material';
+import {MatButtonModule, MatInputModule, MatSelectModule,MatAutocompleteModule, MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatFormFieldModule } from '@angular/material';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SearchComponent } from './components/search/search.component';
 import { UploadComponent } from './components/upload/upload.component';
@@ -34,6 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCheckboxModule,
     FlexLayoutModule,
     LayoutModule,
+    MatInputModule,
     MatSelectModule,
     MatToolbarModule,
     MatSidenavModule,

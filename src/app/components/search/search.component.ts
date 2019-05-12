@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl} from '@angular/forms';
+import { SourceData } from 'src/app/POCO/SourceData';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -12,6 +13,9 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
   filters=new FormControl();
+  myControl=new FormControl();
+  public sourcedata:SourceData=new SourceData();
+  
  public selectList = [
    {
      'id':1,

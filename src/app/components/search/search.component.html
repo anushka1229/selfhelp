@@ -1,4 +1,12 @@
 <div class="container-fluid">
+        <mat-form-field class="example-full-width">
+                <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                  <mat-option *ngFor="let option of sourcedata.projectDetails" [value]="option.Name">
+                    {{option.Name}}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
         <mat-form-field>
                 <mat-label>Filter your search</mat-label>
                 <mat-select [formControl]="filters" multiple (selectionChange)="changeFilter($event.value)">
