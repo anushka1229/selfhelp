@@ -36,5 +36,8 @@ export class UploadComponent implements OnInit {
 
     });
   }
- 
+ SaveForm()
+ {
+   
+ }
 }
